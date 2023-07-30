@@ -60,3 +60,8 @@ button {
 button:hover {
     opacity: 1;
 }
+
+.error input,
+.error textarea {
+    border-color: #DC143C;
+}
