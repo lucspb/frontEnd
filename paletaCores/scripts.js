@@ -1,10 +1,12 @@
 const generateButton = document.querySelector("#generate");
 const colorsDiv = document.querySelector(".colors");
+const input = document.querySelector("#qtd")
 
 function generateColors() {
     colorsDiv.innerHTML = ""
+    const quantity = parseInt(input.value);
 
-    for(let i = 0; i < 5; i++){
+    for(let i = 0; i < quantity; i++){
         const color = generateRandomColors();
         const colorDiv = document.createElement("div")
         colorDiv.style.backgroundColor = color
